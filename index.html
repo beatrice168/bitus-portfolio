@@ -13,16 +13,18 @@
         <div class="container">
         <nav>
             <img src="images/bitu.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">Contacts</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </div>
         </nav>
           <div class="header-text">
-            <p>website Designer</p>
+            <p></p>
             <h1>Hello am <span> Beatrice </span> Paul <br> from Machakos, Kenya</h1>
         </div>
     </div>
@@ -36,15 +38,6 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About me</h1>
-                <p>paggbdugcaknvk,dm;w/JYGFSNMCUQDHNGXWBFW C, 
-                    BSCSHGYEHFD CK,MIAHJDNKQJDLKOJDHXXGLZJKWOKDJS
-                    BEBWXFHVHFHIWUIHEEIEIIEHIIHIEIBEEBBEBVBBBBEBVBE
-                    VVBBVBBVBVBVBVBVBVBVBVVVBVBVBVBVBVBVBVBVBVBVBVBV
-                    VBVBVVBVBVNNBNNNNBB BBVCVBBBVVBVBVC C VBVBVVBVBV
-                    VVV VBCCCCCCCCCCCCCBBBBBBBBBBBBBBVVVVVVVBVVVVBVVN
-                    BVVVVVVVVVVVVVVVBVVVVVVVVVVVVVVVVBVVVVVVVVVVVBVBV
-                    NVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVBVVVVVVVV
-                </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -59,7 +52,7 @@
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023</span><br>web Designing</li>
+                        <li><span>2023 Jan to date</span><br>web Development</li>
                         <!-- <li><span>website Development</span><br>web Developing</li>
                         <li><span>App Development</span><br>App Developing</li> -->
                     </ul>
@@ -84,9 +77,10 @@
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
                 <p>
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
+                    Passionate about web design, with a keen eye for 
+                    aesthetics and user-centered experiences. Proficient in HTML, CSS, and 
+                    responsive design principles. Dedicated to crafting visually appealing and functional 
+                    websites that engage users effectively.
                 </p>
                 <a href="#">Learn more</a>
             </div>
@@ -94,22 +88,23 @@
                 <i class="fa-solid fa-blog"></i>
                 <h2>Web Development</h2>
                 <p>
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
+                    Enthusiastic web developer specializing in
+                     frontend technologies like JavaScript and React.js, as well as 
+                     backend skills using Python and Flask. Committed to building dynamic and user-friendly web applications 
+                    that deliver seamless experiences.
                 </p>
                 <a href="#">Learn more</a>
             </div>
-            <div>
+            <!-- <div>
                 <i class="fa-brands fa-app-store"></i>
-                <h2>App Development</h2>
+                <!-- <h2>App Development</h2>
                 <p>
                     ffffffffffffffffffffffffffffffff
                     ffffffffffffffffffffffffffffffff
                     ffffffffffffffffffffffffffffffff
-                </p>
-                <a href="#">Learn more</a>
-            </div>
+                </p> -->
+                <!-- <a href="#">Learn more</a> -->
+            </div> -->
         </div>
     </div>
 </div>
@@ -121,32 +116,29 @@
             <div class="work">
                 <img src="images/work1.png" >
                 <div class="layer">
-                    <h3> Disney App</h3>
-                    <p>havbcdbscchachxxxxxhhjjjjjjjjkkk
-                        vhjjg dtgkhhygffffgfggjjjiugfcdcc
-                        xxv    gvtgguhjokk,fbddrtyyuyinn 
+                    <h3> Bus Booking App</h3>
+                    <p>This is an app where by people can book 
+                        for certain buses online to different 
+                        destinations it uses mpesa payment method
                     </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work1.png" >
+                <img src="images/work2.png" >
                 <div class="layer">
-                    <h3> Disney App</h3>
-                    <p>havbcdbscchachxxxxxhhjjjjjjjjkkk
-                        vhjjg dtgkhhygffffgfggjjjiugfcdcc
-                        xxv    gvtgguhjokk,fbddrtyyuyinn 
+                    <h3>Automotive spares App</h3>
+                    <p>This is an automotive spare parts application to
+                        help shop owners keep track of their sales
                     </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work1.png" >
+                <img src="images/work3.png" >
                 <div class="layer">
                     <h3> Disney App</h3>
-                    <p>havbcdbscchachxxxxxhhjjjjjjjjkkk
-                        vhjjg dtgkhhygffffgfggjjjiugfcdcc
-                        xxv    gvtgguhjokk,fbddrtyyuyinn 
+                    <p>This is a disney web app for children entertainment
                     </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
                 </div>
@@ -161,26 +153,27 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">contact Me</h1>
-                <p>contact@example.com</p>
-                <p>0706314418</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>helgapaul389@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0706314418</p>
                 <div class="social-icons">
                     <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
-                    
+                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>   
                 </div>
+                <!-- <a href="" download class="btn btn2">Download CV</a> -->
             </div>
-            <div class="contact-right">
-                <form>
+            <!-- <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder=" Your email" required>
-                    <textarea name="message" id="" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit">submit</button>
-
+                    <input type="email" name="Email" placeholder=" Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
                 </form>
-            </div>
-
+            </div> -->
         </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Beatrice. Made by with <i class="fa-solid fa-heart"></i> Beatrice</p>
     </div>
 </div>
 <script>
@@ -200,5 +193,25 @@
 
 
 </script>
+<script>
+    var sidemeu =document.getElementById("sidemenu")
+    function openmenu(){
+        sidemeu.style.right="0"
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqUW4Fnd_QKYQy7Q--D3OGttU8WqEdZCqSwKcLOXEX15Emq6i5MpbJm0Xo6XKmZTTL1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
