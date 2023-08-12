@@ -73,8 +73,9 @@ nav ul li a:hover::after{
 }
 /* about */
 .img{
-  height: 600px;
-  /* width: 100px; */
+  height: 400px;
+  /* border-radius: 20px; */
+  /* width: 700vw; */
 }
 #about{
   padding: 80px 0;
@@ -89,11 +90,11 @@ nav ul li a:hover::after{
   flex-basis: 35%;
 }
 .about-col-1 img{
-  width: 100%;
-  /* border-radius: 15%; */
+  width: 180%;
+  border-radius: 10%;
 }
 .about-col-2{
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
 .sub-title{
   font-size: 60px;
