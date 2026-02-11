@@ -4,214 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/b46b79bef1.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Beatrice Paul - Portfolio</title>
 </head>
 <body> 
-    <div id="header">
-        <div class="container">
-        <nav>
-            <img src="images/bitu.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#contact">Contacts</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </div>
+    <header class="header">
+        <a href="#home" class="logo">Beatrice Paul</a>
+        <box-icon name='menu' id="menu-icon"></box-icon>
+
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonial">Testimonials</a>
+            <a href="#contact">Contact</a>            
         </nav>
-          <div class="header-text">
-            <p></p>
-            <h1>Hello am <span> Beatrice </span> Paul <br> from Machakos, Kenya</h1>
-        </div>
-    </div>
-<!-- </body> -->
-<!-- about -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/background.jpg" class="img">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>website Designer</span><br>web Designing</li>
-                        <li><span>website Development</span><br>web Developing</li>
-                        <li><span>App Development</span><br>App Developing</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023 Jan to date</span><br>web Development</li>
-                        <!-- <li><span>website Development</span><br>web Developing</li>
-                        <li><span>App Development</span><br>App Developing</li> -->
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019</span><br>High school</li>
-                        <li><span>2023</span><br>certificate, software engineering ,Moringa school</li>
-                        <li><span>2023</span><br>computer science,catholic university</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- services -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>
-                    Passionate about web design, with a keen eye for 
-                    aesthetics and user-centered experiences. Proficient in HTML, CSS, and 
-                    responsive design principles. Dedicated to crafting visually appealing and functional 
-                    websites that engage users effectively.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-blog"></i>
-                <h2>Web Development</h2>
-                <p>
-                    Enthusiastic web developer specializing in
-                     frontend technologies like JavaScript and React.js, as well as 
-                     backend skills using Python and Flask. Committed to building dynamic and user-friendly web applications 
-                    that deliver seamless experiences.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            <!-- <div>
-                <i class="fa-brands fa-app-store"></i>
-                <!-- <h2>App Development</h2>
-                <p>
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
-                    ffffffffffffffffffffffffffffffff
-                </p> -->
-                <!-- <a href="#">Learn more</a> -->
-            </div> -->
-        </div>
-    </div>
-</div>
-<!-- portfolio -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1.png" >
-                <div class="layer">
-                    <h3> Bus Booking App</h3>
-                    <p>This is an app where by people can book 
-                        for certain buses online to different 
-                        destinations it uses mpesa payment method
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work2.png" >
-                <div class="layer">
-                    <h3>Automotive spares App</h3>
-                    <p>This is an automotive spare parts application to
-                        help shop owners keep track of their sales
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work3.png" >
-                <div class="layer">
-                    <h3> Disney App</h3>
-                    <p>This is a disney web app for children entertainment
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">see more</a>
-    </div>
-</div>
-<!-- Contacts -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>helgapaul389@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>0706314418</p>
-                <div class="social-icons">
-                    <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>   
-                </div>
-                <!-- <a href="" download class="btn btn2">Download CV</a> -->
-            </div>
-            <!-- <div class="contact-right">
-                <form name="'submit-to-google-sheet'">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder=" Your email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
-                </form>
-            </div> -->
-        </div>
-    </div>
-    <div class="copyright">
-        <p>copyright Beatrice. Made by with <i class="fa-solid fa-heart"></i> Beatrice</p>
-    </div>
-</div>
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents")
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    
-    }
-
-
-</script>
-<script>
-    var sidemeu =document.getElementById("sidemenu")
-    function openmenu(){
-        sidemeu.style.right="0"
-    }
-    function closemenu(){
-        sidemeu.style.right="-200px"
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqUW4Fnd_QKYQy7Q--D3OGttU8WqEdZCqSwKcLOXEX15Emq6i5MpbJm0Xo6XKmZTTL1w/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </header>
 </body>
 </html>
