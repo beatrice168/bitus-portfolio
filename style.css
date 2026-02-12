@@ -467,8 +467,8 @@ span {
     .services{
         padding: 7rem;
     }
-    .testimonial.wrapper{
-        grid-template-columns: repeat(1, 1fr);
+    .testimonial .wrapper{
+        grid-template-columns: repeat(1,1fr);
     }
     .contact form .input-box input{
         width: 100%;   
@@ -543,6 +543,16 @@ span {
         margin-top: 4rem;
     }
 
+}
+@media(max-width: 617px){
+   .home-img img{
+        width:70vw;
+        margin-top: 8rem;
+   }
+    .about-img img{
+          width: 70vw;
+          margin-top: 4rem;
+    }
 }
 @media(max-width: 617px){
     html{
